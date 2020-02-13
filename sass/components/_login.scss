@@ -1,0 +1,75 @@
+// Login Section Styles Open
+.login{
+  width: 100%;
+  height: 100%;
+  @include display-flex-col;
+
+  .login-panel{
+    padding: 10% 5%;
+    width: 20%;
+    background-color: rgba(0,0,0,.7);
+    @include display-flex-col;
+
+    .fa-user-circle{
+      font-size: 5rem;
+      margin-bottom: 3%;
+      color: #fff;
+    }
+
+    .input-block{
+      @include display-flex-row;
+      width: 100%;
+
+      .input-icon{
+        width: 30px;
+        height: 30px;
+        background-color: $red;
+        color: #fff;
+        margin-bottom: 10%;
+        @include display-flex-col;
+      }
+
+      input{
+        width: 50%;
+        height: 30px;
+        margin-bottom: 10%;
+        padding: 0 0 0 10px;
+      }
+    }
+
+    #login-btn-enter{
+      width: 30%;
+      height: 40px;
+      padding: 0;
+      background-color: $red;
+      color: #fff;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .fa-check-circle{
+      color: green;
+    }
+
+    .fa-exclamation-triangle{
+      color: $red;
+    }
+
+    .fa-exclamation-triangle, .fa-check-circle{
+      font-size: 1.5rem;
+      display: none;
+      font-size: 1rem;
+      margin: 0 0 10% 3%;
+    }
+  }
+}
+
+// Login Section Media Query´s
+@media screen and (max-width: 992px){
+  .login{
+
+    .login-panel{
+      width: 80%;
+    }
+  }
+}

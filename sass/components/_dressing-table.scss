@@ -1,0 +1,80 @@
+// dressing-table Section Styles Open
+.dressing-table{
+  width: 100%;
+  height: 100%;
+  @include display-flex-col;
+  text-align: center;
+  background-image: url('../img/dressing-table/dressing-table-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  h2{
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 2px 5px 6px #444444;
+  }
+
+  .dressing-table-carousel{
+    width: 70%;
+    background-color: rgba(0,0,0, .4);
+    height: 200px;
+    z-index: 100000000000000000000000000000;
+    border-radius: 100px;
+
+    .slick-prev, .slick-next{
+      background-color: $red;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      @include display-flex-col;
+    }
+
+    .slick-prev:before , .slick-next:before{
+      color : #fff;
+    }
+
+    .dressing-table-carousel-logo{
+      height: 180px;
+      width: 200px;
+      @include display-flex-col;
+
+      img{
+        height: 90px;
+        width: 160px;
+        cursor: pointer;
+      }
+
+      img:hover{
+        border: 1px solid $red;
+      }
+    }
+  }
+}
+
+// dressing-table Section Media Query
+@media screen and (min-width: 992px){
+  .dressing-table{
+    background-size: 150%;
+    animation: move 10s linear infinite alternate;
+    @keyframes move {
+        from{
+          background-position: bottom left;
+        }
+        to{
+          background-position: top right;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .dressing-table{
+    .dressing-table-carousel{
+      border-radius: 0;
+    }
+  }
+}

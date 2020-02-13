@@ -1,0 +1,115 @@
+// Our Clients Section Styles Open
+.clients{
+  width: 100%;
+  text-align: center;
+  padding: 10% 0 0 0;
+  @include display-flex-col;
+
+  p{
+    color: $red;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+  }
+
+  h3{
+    color: $grey;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+
+  h3 , p{
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+
+  .clients-image{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/clients/dfa-rio-branco-client-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s;
+    border-radius: 50%;
+    @include display-flex-col;
+
+    button{
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      background-color: rgba(0,0,0, .6);
+      color: #fff;
+      letter-spacing: 2px;
+      border: 1px solid $red;
+      transition: 1s;
+    }
+
+    button:hover{
+      background-color: rgba(0,0,0, .7);
+      color: $red;
+    }
+  }
+
+  .clients-image:hover{
+    transition: 1s;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../img/clients/dfa-rio-branco-client-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+  }
+}
+
+// Clients Section Media Querys
+@media screen and (min-width: 400px) and (max-width: 992px){
+  .clients{
+    .clients-image{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .clients{
+    p{
+      font-size: 10px;
+    }
+
+    h3{
+      font-size: 11px;
+    }
+
+    button{
+      width: 110px;
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .clients{
+    .clients-image{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+/*
+.clients-carousel{
+  height: 400px;
+  width: 600px;
+
+  .client-image{
+    height: 400px;
+    width: 600px;
+
+    img{
+      height: 400px;
+      width: 600px;
+    }
+  }
+} */

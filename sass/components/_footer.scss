@@ -1,0 +1,66 @@
+// Footer Section Styles Open
+footer{
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background-color: #fcfcfc;
+  padding: 5% 0;
+  display: flex;
+  text-align: center;
+
+
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    h3{
+      font-size: 13px;
+      color: $red;
+      font-weight: bold;
+      letter-spacing: 5px;
+      margin: 5%;
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    p{
+      font-size: 12px;
+      color: $grey;
+      font-family: 'Raleway', sans-serif;
+      margin: 2% 5%;
+    }
+
+    hr{
+      margin: 5% auto 5% auto;
+    }
+
+    .social-nets{
+      display: inline-block;
+      margin: 0 auto 0 auto;
+
+      i{
+        font-size: 1.5rem;
+        color: grey;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      i:hover{
+        font-size: 1.5rem;
+        color: $grey;
+        margin: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Footer Section Media Querys
+@media screen and (max-width: 992px){
+  footer{
+    @include display-flex-col;
+  }
+}

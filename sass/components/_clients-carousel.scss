@@ -1,0 +1,89 @@
+// Clients Carousel Section Styles Open
+.clients-carousel{
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  @include display-flex-col;
+
+  h2{
+    font-size: 40px;
+    color: $grey;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 2% 0;
+  }
+
+  .clients-carousel-content{
+    width: 100%;
+    height: 50vh;
+
+    .slick-prev , .slick-next{
+      width: 50px;
+      height: 50px;
+      background-color: $red;
+      border-radius: 50%;
+    }
+
+    .slick-prev{
+      left: 30px;
+      z-index: 100000000000000000000;
+    }
+
+    .slick-next{
+      right: 30px;
+      z-index: 100000000000000000000;
+    }
+
+    .slick-prev:before , .slick-next:before{
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+      @include display-flex-col;
+    }
+
+    .client-image{
+      width: 100%;
+      height: 50vh;
+      @include display-flex-col;
+
+      img{
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+// Clients Carousel Media Querys
+@media screen and (max-width: 640px){
+  .clients-carousel{
+    h2{
+      font-size: 15px;
+    }
+
+    .clients-carousel-content{
+      .slick-prev{
+        left: -20px;
+      }
+
+      .slick-next{
+        right: -20px;
+      }
+
+      .slick-prev , .slick-next{
+        width: 30px;
+        height: 30px;
+        background-color: $red;
+        border-radius: 0;
+      }
+
+      .client-image{
+        img{
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}

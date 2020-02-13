@@ -1,0 +1,17 @@
+// Top Button Scroll Styles Open
+.top-button{
+  height: 50px;
+  width: 50px;
+  background-color: rgba(10,10,10, 0.7);
+  color: $red;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1000000000000000000000000;
+  display: none;
+  cursor: pointer;
+
+  i{
+    font-size: 2rem;
+  }
+}
