@@ -39,4 +39,41 @@ $(document).ready(() =>{
       $(".pass-success").hide();
     }
   });
+
+  // Validate Login with Firebase
+  $("#login-btn-enter").click(() =>{
+    let email = $(".user-id").val();
+    let password = $(".user-password").val();
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
+      alert("No se ah podido acceder");
+    });
+
+    // Clean fields
+    $(".user-id").val('');
+    $(".user-password").val('');
+  });
+
+  // User Activity Observer
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      var displayName = user.displayName;
+      var email = user.email;
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+      alert("Se Logueo Correctamente");
+    } else {
+      alert('No existe usuario activo');
+    }
+  });
 });
