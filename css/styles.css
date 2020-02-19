@@ -959,6 +959,7 @@ footer div .social-nets i:hover {
 .perfumery .perfumery-carousel .perfumery-carousel-logo img {
   height: 100px;
   width: auto;
+  max-width: 260px;
   cursor: pointer;
 }
 .perfumery .perfumery-carousel .perfumery-carousel-logo img:hover {
