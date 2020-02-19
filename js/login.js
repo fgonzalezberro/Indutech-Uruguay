@@ -72,7 +72,10 @@ $(document).ready(() =>{
       var uid = user.uid;
       var providerData = user.providerData;
       alert("Se Logueo Correctamente");
-    } else {
+
+      $(".principal-view-content").html('');
+      $(".principal-view-content").load("../components/_clients-zone.html");
+    }else {
       alert('No existe usuario activo');
     }
   });

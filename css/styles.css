@@ -1368,5 +1368,45 @@ footer div .social-nets i:hover {
     width: 80%;
   }
 }
+.clients-zone {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients-zone h2 {
+  font-size: 40px;
+  color: #5b5b5b;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 2% 0;
+}
+.clients-zone .price-lists {
+  width: 50%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients-zone .price-lists .price-file {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.clients-zone .price-lists .price-file i {
+  font-size: 2rem;
+  color: #ffff99;
+  cursor: pointer;
+}
+.clients-zone .price-lists .price-file p {
+  font-size: 13px;
+  color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */
