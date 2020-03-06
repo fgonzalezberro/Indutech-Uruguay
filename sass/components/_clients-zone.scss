@@ -2,6 +2,7 @@
 .clients-zone{
   width: 100%;
   height: 100%;
+  text-align: center;
   @include display-flex-col;
 
   h2{
@@ -12,25 +13,50 @@
     margin: 0 0 2% 0;
   }
 
-  .price-lists{
+  #price-lists{
     width: 50%;
     height: auto;
     background-color: rgba(0,0,0,.8);
-    padding: 5% 0;
+    padding: 5% 10%;
     @include display-flex-col;
+    align-items: flex-start;
 
     .price-file{
       @include display-flex-row;
-
-      i{
-        font-size: 2rem;
-        color: #ffff99;
-        cursor: pointer;
-      }
+      cursor: pointer;
 
       p{
         font-size: 13px;
         color: #fff;
+        text-align: right;
+
+        i{
+          font-size: 2rem;
+          color: #ffff99;
+        }
+      }
+
+      p:hover{
+        color: tomato;
+      }
+    }
+  }
+}
+
+// Clients Zone Media Query´s
+@media screen and (max-width: 992px){
+  .clients-zone{
+    h2{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    #price-lists{
+
+      .price-file{
+        p{
+          font-size: 9px;
+        }
       }
     }
   }

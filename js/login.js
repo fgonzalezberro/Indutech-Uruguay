@@ -1,5 +1,6 @@
 // Login Dashboard Features
 $(document).ready(() =>{
+
   // Login Button Animation
   $("#login-btn-enter").mouseover(function(){
     $(this).addClass("animate flipOutX");
@@ -52,7 +53,7 @@ $(document).ready(() =>{
       var errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
-      alert("No se ah podido acceder");
+      alert("Error, contraseña o usuario incorrectos.");
     });
 
     // Clean fields
@@ -71,12 +72,12 @@ $(document).ready(() =>{
       var isAnonymous = user.isAnonymous;
       var uid = user.uid;
       var providerData = user.providerData;
-      alert("Se Logueo Correctamente");
+      alert("Logueado Correctamente");
 
       $(".principal-view-content").html('');
       $(".principal-view-content").load("../components/_clients-zone.html");
     }else {
-      alert('No existe usuario activo');
+      //alert('No existe usuario activo');
     }
   });
 });

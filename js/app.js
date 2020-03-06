@@ -110,5 +110,5 @@ $(document).ready(() =>{
       // settings: "unslick"
       // instead of a settings object
     ]
-    });
+  });
 });
