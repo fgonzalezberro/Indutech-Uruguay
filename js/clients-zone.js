@@ -3,7 +3,7 @@ $(document).ready(() =>{
   const db = firebase.firestore();
   const listsContent = document.getElementById("price-lists");
 
-  console.log(listsContent);
+  //console.log(listsContent);
 
   // Read DataBase Documents
   db.collection("lists").get().then((querySnapshot) => {
