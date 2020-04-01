@@ -17,7 +17,7 @@ $(document).ready(() =>{
   // Main-Content Features
   $("#close-button").click(() =>{
     $("#principal-view").slideUp();
-    $("#principal-view-content").empty();
+    $("#principal-view-content").html('');
   });
 
   // Navbar Button Functionality
