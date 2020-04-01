@@ -934,12 +934,11 @@ footer div .social-nets i:hover {
   background-color: rgba(0, 0, 0, 0.4);
   height: 200px;
   z-index: 7886392056514347008;
-  border-radius: 100px;
 }
 .perfumery .perfumery-carousel .slick-prev, .perfumery .perfumery-carousel .slick-next {
   background-color: tomato;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -1014,12 +1013,11 @@ footer div .social-nets i:hover {
   background-color: rgba(0, 0, 0, 0.4);
   height: 200px;
   z-index: 7886392056514347008;
-  border-radius: 100px;
 }
 .optic .optic-carousel .slick-prev, .optic .optic-carousel .slick-next {
   background-color: tomato;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -1094,7 +1092,6 @@ footer div .social-nets i:hover {
   background-color: rgba(0, 0, 0, 0.4);
   height: 200px;
   z-index: 7886392056514347008;
-  border-radius: 100px;
 }
 .make-up .make-up-carousel .slick-prev, .make-up .make-up-carousel .slick-next {
   background-color: tomato;
@@ -1166,12 +1163,11 @@ footer div .social-nets i:hover {
   background-color: rgba(0, 0, 0, 0.4);
   height: 200px;
   z-index: 7886392056514347008;
-  border-radius: 100px;
 }
 .dressing-table .dressing-table-carousel .slick-prev, .dressing-table .dressing-table-carousel .slick-next {
   background-color: tomato;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -1242,12 +1238,11 @@ footer div .social-nets i:hover {
   background-color: rgba(0, 0, 0, 0.4);
   height: 200px;
   z-index: 7886392056514347008;
-  border-radius: 100px;
 }
 .personal-care .personal-care-carousel .slick-prev, .personal-care .personal-care-carousel .slick-next {
   background-color: tomato;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
