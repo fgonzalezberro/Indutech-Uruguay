@@ -1,19 +1,50 @@
 // Import Components JavaScript File
 $(document).ready(() =>{
 
+  // Call components via Ajax
+  const componentRequest = (componentUrl) =>{
+    $.ajax({
+      url: componentUrl,
+      beforeSend: () =>{
+        $(".loading").slideDown();
+      },
+
+      success: (data) =>{
+        setTimeout(() =>{
+          $(".loading").slideUp();
+          $("#principal-view").slideDown();
+          $("#principal-view").css("display","fixed");
+          $(".principal-view-content").html(data);
+        }, 2000);
+      }
+    });
+  }
+
   // Logistic map section import
-  $(".logistic-map-btn").click(function(){
-    $(".principal-view-content").load("../components/_logistic-map.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
+  $(".logistic-map-btn").click(() => componentRequest('../components/_logistic-map.html'));
 
   // Clients Carousel Section
-  $(".clients-carousel-btn").click(function(){
-    $(".principal-view-content").load("../components/_clients-carousel.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
+  $(".clients-carousel-btn").click(() => componentRequest('../components/_clients-carousel.html'));
+
+  // Show Perfumery Section
+  $(".perfumery-product").click(() => componentRequest('../components/_perfumery.html'));
+
+  // Show Optic Section
+  $(".optic-product").click(() => componentRequest('../components/_optic.html'));
+
+  // Show Make-Up Section
+  $(".make-up-product").click(() => componentRequest('../components/_make-up.html'));
+
+  // Show Personal-Care Section
+  $(".personal-care-product").click(() => componentRequest('../components/_personal-care.html'));
+
+  // Show Login Panel Section
+  $(".login-button").click(() => componentRequest('../components/_login.html'));
+
+  // Show Dressing-Table Section
+  $(".dressing-table-product").click(() => componentRequest('../components/_dressing-table.html'));
+
+
 
   // Clients Carousel Animation
   $('.clients-carousel-content').slick({
@@ -23,14 +54,7 @@ $(document).ready(() =>{
     arrows: true
   });
 
-  // Show Perfumery Section
-  $(".perfumery-product").click(function(){
-    $(".principal-view-content").load("../components/_perfumery.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
-
-  // Perfumery Carousel Features
+  // Perfumery Carousel Animation
   $('.perfumery-carousel').slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -66,14 +90,7 @@ $(document).ready(() =>{
     ]
   });
 
-  // Show Optic Section
-  $(".optic-product").click(function(){
-    $(".principal-view-content").load("../components/_optic.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
-
-  // Optic Carousel Features
+  // Optic Carousel Animation
   $('.optic-carousel').slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -109,14 +126,7 @@ $(document).ready(() =>{
     ]
   });
 
-  // Show Make-Up Section
-  $(".make-up-product").click(function(){
-    $(".principal-view-content").load("../components/_make-up.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
-
-  // Make-Up Carousel Features
+  // Make-Up Carousel Animation
   $('.make-up-carousel').slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -152,14 +162,7 @@ $(document).ready(() =>{
     ]
   });
 
-  // Show Dressing-Table Section
-  $(".dressing-table-product").click(function(){
-    $(".principal-view-content").load("../components/_dressing-table.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
-
-  // Dressing-Table Carousel Features
+  // Dressing-Table Carousel Animation
   $('.dressing-table-carousel').slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -195,14 +198,7 @@ $(document).ready(() =>{
     ]
   });
 
-  // Show Personal-Care Section
-  $(".personal-care-product").click(function(){
-    $(".principal-view-content").load("../components/_personal-care.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
-  });
-
-  // Personal Care Carousel Features
+  // Personal Care Carousel Animation
   $('.personal-care-carousel').slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -236,12 +232,5 @@ $(document).ready(() =>{
         }
       }
     ]
-  });
-
-  // Show Login Panel Section
-  $(".login-button").click(function(){
-    $(".principal-view-content").load("../components/_login.html");
-    $("#principal-view").slideDown();
-    $("#principal-view").css("display","fixed");
   });
 });
