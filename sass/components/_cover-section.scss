@@ -16,7 +16,7 @@
       margin-top: 40vh;
       color: #fff;
       letter-spacing: 5px;
-      font-size: 50px;
+      font-size: 70px;
       font-family: 'Raleway', sans-serif;
       text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     }
@@ -25,7 +25,7 @@
       margin-top: 1%;
       color: $red;
       letter-spacing: 2px;
-      font-size: 25px;
+      font-size: 35px;
       font-family: 'Raleway', sans-serif;
       text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     }
@@ -33,7 +33,10 @@
 
   // Set Image to each slide
   .first-slide{
-    background-image: url('../img/cover-images/zona-franca-libertad-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/container-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    //background-image: url('../img/container-background.png');
   }
 
   .second-slide{

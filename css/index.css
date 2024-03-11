@@ -109,7 +109,7 @@ header nav #navbar-button {
   margin-top: 40vh;
   color: #fff;
   letter-spacing: 5px;
-  font-size: 70px;
+  font-size: 50px;
   font-family: "Raleway", sans-serif;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
@@ -117,14 +117,12 @@ header nav #navbar-button {
   margin-top: 1%;
   color: tomato;
   letter-spacing: 2px;
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Raleway", sans-serif;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 .cover-section .first-slide {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/container-background.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url("../img/container-background.png");
 }
 .cover-section .second-slide {
   background-image: url("../img/cover-images/zona-franca-libertad-2.jpg");
@@ -1423,4 +1421,4 @@ footer div .social-nets i:hover {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */

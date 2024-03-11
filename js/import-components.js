@@ -21,28 +21,28 @@ $(document).ready(() =>{
   }
 
   // Logistic map section import
-  $(".logistic-map-btn").click(() => componentRequest('../components/_logistic-map.html'));
+    //$(".logistic-map-btn").click(() => componentRequest('../components/_logistic-map.html'));
 
   // Clients Carousel Section
-  $(".clients-carousel-btn").click(() => componentRequest('../components/_clients-carousel.html'));
+   //$(".clients-carousel-btn").click(() => componentRequest('../components/_clients-carousel.html'));
 
   // Show Perfumery Section
-  $(".perfumery-product").click(() => componentRequest('../components/_perfumery.html'));
+    //$(".perfumery-product").click(() => componentRequest('../components/_perfumery.html'));
 
   // Show Optic Section
-  $(".optic-product").click(() => componentRequest('../components/_optic.html'));
+   //$(".optic-product").click(() => componentRequest('../components/_optic.html'));
 
   // Show Make-Up Section
-  $(".make-up-product").click(() => componentRequest('../components/_make-up.html'));
+   //$(".make-up-product").click(() => componentRequest('../components/_make-up.html'));
 
   // Show Personal-Care Section
-  $(".personal-care-product").click(() => componentRequest('../components/_personal-care.html'));
+   //$(".personal-care-product").click(() => componentRequest('../components/_personal-care.html'));
 
   // Show Login Panel Section
   $(".login-button").click(() => componentRequest('../components/_login.html'));
 
   // Show Dressing-Table Section
-  $(".dressing-table-product").click(() => componentRequest('../components/_dressing-table.html'));
+   //$(".dressing-table-product").click(() => componentRequest('../components/_dressing-table.html'));
 
 
 
