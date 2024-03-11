@@ -150,6 +150,9 @@ header nav #navbar-button {
     font-size: 15px;
     margin-top: 3%;
   }
+  .cover-section .first-slide {
+    background-size: cover;
+  }
 }
 .about-us {
   width: 100%;
