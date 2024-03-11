@@ -136,7 +136,7 @@ header nav #navbar-button {
 @media screen and (max-width: 992px) {
   .cover-section {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
   }
   .cover-section div {
     width: 100%;
