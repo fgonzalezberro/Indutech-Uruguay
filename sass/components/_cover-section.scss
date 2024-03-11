@@ -57,15 +57,17 @@
     div{
       width: 100%;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
 
       h1{
         font-size: 22px;
-        margin-top: 65%;
       }
 
       p{
         font-size: 15px;
-        margin-top: 3%;
+        margin-top: 20%;
       }
     }
 
